@@ -1,17 +1,17 @@
 {
   "slides": [
     {
-      "image": "data/slider-projects/laura-profolio-min.png",
-      "title": "Portfolio Makeup & Nails Artist",
+      "image": "data/slider-projects/Quasagram Banner.png",
+      "title": "Quasagram",
       "description": "Modern and responsive portfolio website design",
       "extendedDescription": "A fully responsive portfolio website built with modern web technologies. Features include smooth animations, dynamic content loading, and optimized performance. The design focuses on user experience with intuitive navigation and clean, professional aesthetics.",
-      "projectUrl": "https://lauraacastro.github.io/",
-      "sourceCodeUrl": "https://github.com/LauraaCastro/LauraaCastro.github.io",
+      "projectUrl": "https://isyfox.github.io/quasagram",
+      "sourceCodeUrl": "https://github.com/IsyFox/Quasagram",
       "technologies": ["html5", "css3","js"],
       "tags": ["portfolio", "web-design"],
       "gallery": [
-        "https://raw.githubusercontent.com/LauraaCastro/LauraaCastro.github.io/refs/heads/main/src/diseño-website-lau.png",
-        "data/slider-projects/laura-profolio-2.png"
+        "data/slider-projects/Quasagram Banner.png",
+        "data/slider-projects/Quasagram Banner.png"
       ]
     },
     {
