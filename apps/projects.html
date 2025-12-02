@@ -12,7 +12,7 @@
     <nav class="projects-nav">
         <h2><i class="fa-solid fa-code"></i> Projectos </h2>
         <div class="filters-section">
-            <h3> Filtrar by Tecnologia </h3>
+            <h3> Filtrar por Tecnologia </h3>
             <div class="filter-options" id="techFilters"></div>
         </div>
         <div class="project-list" id="projectList">
@@ -36,7 +36,6 @@
 
         async function loadProjects() {
             try {
-                //const response = await fetch('../data/slider-data.json');
                 const response = await fetch('../data/slider-data.json');
                 const data = await response.json();
                 return data.slides;
@@ -105,7 +104,7 @@
                 const projectItem = document.createElement('div');
                 projectItem.className = `project-item ${index === 0 ? 'active' : ''}`;
                 projectItem.innerHTML = `
-                    <img src="../${project.image}" alt="${project.title}">
+                    <img src="${project.image}" alt="${project.title}">
                 `;
                 projectItem.addEventListener('click', () => showProject(project, index));
                 projectList.appendChild(projectItem);
@@ -123,8 +122,8 @@
                         <div class="project-header">
                             <h1>${project.title}</h1>
                             <div class="project-links">
-                                <a href="${project.projectUrl || '#'}" class="project-link primary-link" target="_blank"><i class="fa-solid fa-link"></i></i> View Project</a>
-                                <a href="${project.sourceCodeUrl || '#'}" class="project-link secondary-link" target="_blank"><i class="fa-brands fa-github"></i> Source Code</a>
+                                <a href="${project.projectUrl || '#'}" class="project-link primary-link" target="_blank"><i class="fa-solid fa-link"></i></i> Ver Projecto </a>
+                                <a href="${project.sourceCodeUrl || '#'}" class="project-link secondary-link" target="_blank"><i class="fa-brands fa-github"></i> Código Fonte </a>
                             </div>
                         </div>
                         <img src="${project.image}" alt="${project.title}" class="project-image">
@@ -141,7 +140,7 @@
                         <p class="project-description">${project.description}</p>
                     </div>
                     <div class="project-extended-info" id="extendedInfo">
-                        <h2>Extended Description</h2>
+                        <h2> Descrição Detalhada </h2>
                         <p>${project.extendedDescription || 'No extended description available.'}</p>
                         <div class="project-gallery">
                             ${project.gallery ? project.gallery.map(img => `
